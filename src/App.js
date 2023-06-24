@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Services from './components/Service';
+import Navigation from './components/Navigation';
+import GlobalProvider from './GlobalProvider';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import Course from './components/Course';
+import SingleCourse from './components/SingleCourse';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalProvider>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/course/:id" element={<PrivateRoute><SingleCourse/></PrivateRoute>} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/signin" element={<Signup />} />
+        </Routes>
+        <Footer />
+      </GlobalProvider>
+    </Router>
   );
+};
+
+function PrivateRoute({ children }) {
+  const isLoggedIn = localStorage.getItem('isLoggedIn');
+  const redirectURL = '/login';
+
+  if (isLoggedIn) {
+    return children;
+  } else {
+    return <Navigate to={redirectURL} />;
+  }
 }
 
 export default App;
