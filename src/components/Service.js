@@ -15,7 +15,7 @@ const services = [
   {
     title: 'Personalized Learning Experience',
     description: 'Vestibulum sodales elit nisl, id tincidunt ligula facilisis at. Integer vestibulum ante ac tincidunt aliquet. Nunc ut tortor efficitur, rutrum odio ac, dapibus purus.',
-    imageUrl: 'https://source.unsplash.com/400x300/?personalized',
+    imageUrl: 'https://source.unsplash.com/400x300/?learning',
   },
 ];
 

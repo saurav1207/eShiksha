@@ -1,6 +1,5 @@
 import React from 'react';
-import './Footer.css'
-
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -14,15 +13,12 @@ const Footer = () => {
           <h2 className="footer-heading">Contact Us</h2>
           <ul className="footer-list">
             <li className="footer-list-item">
-              <i className="fas fa-map-marker-alt footer-icon"></i>
               <p className="footer-item-text">JECRC College, Jaipur, Rajasthan 302022</p>
             </li>
             <li className="footer-list-item">
-              <i className="fas fa-phone-alt footer-icon"></i>
               <p className="footer-item-text">(+91) 8340616725</p>
             </li>
             <li className="footer-list-item">
-              <i className="fas fa-envelope footer-icon"></i>
               <p className="footer-item-text">info@eShiksha.com</p>
             </li>
           </ul>

@@ -1,7 +1,7 @@
- 
 /* Footer */
 .footer-page {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background-color: rgb(229, 225, 225);
     padding: 50px 0;
 }
 
@@ -20,15 +20,15 @@
 .footer-heading {
     color: #333;
     font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .footer-text {
     color: #666;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .footer-list {
@@ -42,14 +42,10 @@
     margin-bottom: 10px;
 }
 
-.footer-icon {
-    color: #666;
-    font-size: 18px;
-    margin-right: 10px;
-}
-
 .footer-item-text {
     color: #666;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1;
 }
+
+
