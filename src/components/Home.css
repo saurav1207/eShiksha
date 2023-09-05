@@ -28,7 +28,7 @@ body {
 
 /* call-to-action section styles */
 .call-to-action {
-    background-color: rgb(212, 210, 210);
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 100px 0;
@@ -98,7 +98,7 @@ body {
     border-radius: 5px;
     transition: border-color 0.3s ease-in-out;
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
     outline: none;
 }

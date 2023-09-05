@@ -27,13 +27,6 @@ input[type='password'] {
     transition: border-color 0.3s ease;
 }
 
-/* Styling for filled inputs */
-input[type='email']:valid,
-input[type='password']:valid {
-    border-color: #4caf50;
-}
-
-
 /* Increase the height of the input fields */
 input[type='email'],
 input[type='password'] {

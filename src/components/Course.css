@@ -61,8 +61,8 @@
 
 .course-button {
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
+  background-color: rgb(229, 225, 225);
+  color: black;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -76,6 +76,6 @@
 }
 
 .course-button:hover {
-  background-color: #0056b3;
+  background-color: rgb(80, 80, 186);
   cursor: pointer;
 }
