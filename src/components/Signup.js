@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom';
 
-import './Signup.css';
+import '../styles/Signup.css';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -35,19 +35,18 @@ const Signup = () => {
     };
 
     try {
-      toast.info('Registering...'); // Show initial info toast
+      toast.info('Registering...'); 
 
-      // Simulate an asynchronous API call or delay using setTimeout
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      toast.success('Registration successful. You can now log in.'); // Show success toast
-      await new Promise((resolve) => setTimeout(resolve, 2000)); // Display success toast for 2 seconds
+      toast.success('Registration successful. You can now log in.'); 
+      await new Promise((resolve) => setTimeout(resolve, 2000)); 
 
       localStorage.setItem('user', JSON.stringify(userData));
       localStorage.setItem('isLoggedIn', true);
       navigate('/login');
     } catch (error) {
-      toast.error('Registration failed.'); // Show error toast
+      toast.error('Registration failed.'); 
       console.error('Error during registration:', error);
     }
   };

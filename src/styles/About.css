@@ -1,5 +1,5 @@
 .About-section {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .About-container {
@@ -12,6 +12,7 @@
 
 .About-text {
     width: 50%;
+    text-align: justify; 
 }
 
 .About-text h1 {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './SingleCourse.css';
+import '../styles/SingleCourse.css';
 
 const SingleCourse = () => {
   const { id } = useParams();

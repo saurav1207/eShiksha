@@ -27,7 +27,6 @@ input[type='password'] {
     transition: border-color 0.3s ease;
 }
 
-/* Increase the height of the input fields */
 input[type='email'],
 input[type='password'] {
     height: 15px;

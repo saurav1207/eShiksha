@@ -15,7 +15,6 @@
   top: 0;
 }
 
-
 .content-list {
   list-style-type: none;
   padding: 0;
@@ -76,10 +75,8 @@
   overflow: hidden;
   background-color: #000;
   border-radius: 5px;
-  margin: 0 auto; /* Center the container horizontally */
-
+  margin: 0 auto;
 }
-
 
 .video-container iframe {
   position: absolute;
@@ -87,19 +84,4 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .single-course {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .content {
-    margin-left: 0;
-  }
 }

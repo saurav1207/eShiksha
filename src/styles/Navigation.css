@@ -70,7 +70,6 @@
 .auth-buttons button.logout-button {
   background-color: rgb(80, 80, 186);
   width: 100px;
-  /* Adjust the width as needed */
 }
 
 .auth-buttons button.signup-button {

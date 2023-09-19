@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Course.css';
+import '../styles/Course.css';
 import WebDevImage from '../assets/undraw_web_developer_re_h7ie.svg';
 import MLImage from '../assets/undraw_source_code_re_wd9m.svg';
 import CloudImage from '../assets/undraw_cloud_hosting_7xb1.svg';

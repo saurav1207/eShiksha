@@ -1,22 +1,23 @@
 import React from 'react';
-import './Service.css';
+import '../styles/Service.css';
 
 const services = [
   {
-    title: 'Online Courses and Classes',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida sapien vel commodo pulvinar. Ut vel pharetra augue, nec vestibulum tellus. Aenean euismod, mauris non auctor congue, est leo feugiat lectus, vel commodo turpis massa et enim.',
-    imageUrl: 'https://source.unsplash.com/400x300/?courses',
-  },
+    title: 'Best Learning Resources',
+    description: 'Discover top-quality educational content, courses, and materials handpicked from the web. Say goodbye to endless searching; we have done the work for you. Dive into a world of knowledge with our curated selection of the best learning resources.',
+    imageUrl: 'https://source.unsplash.com/300x200/?learning-resources',
+  },  
   {
-    title: 'Live Webinars and Workshops',
-    description: 'Fusce gravida tellus ut felis finibus vestibulum. Aliquam congue odio vel gravida maximus. Cras lobortis nulla at neque convallis hendrerit. Sed vulputate tristique massa id finibus. Aliquam erat volutpat. Nulla lobortis eleifend condimentum.',
-    imageUrl: 'https://source.unsplash.com/400x300/?webinars',
+    title: 'Curated Content and Best Courses',
+    description: 'Discover handpicked, top-notch courses and curated content designed to boost your skills and knowledge. Our experts select the best educational materials to help you excel in your chosen field.',
+    imageUrl: 'https://source.unsplash.com/300x200/?education',
   },
   {
     title: 'Personalized Learning Experience',
-    description: 'Vestibulum sodales elit nisl, id tincidunt ligula facilisis at. Integer vestibulum ante ac tincidunt aliquet. Nunc ut tortor efficitur, rutrum odio ac, dapibus purus.',
-    imageUrl: 'https://source.unsplash.com/400x300/?learning',
+    description: 'At E-Shiksha, we understand that every student is unique. Thats why we offer a personalized learning experience tailored to your individual needs and learning style. Our platform adapts to you, providing customized recommendations and resources to help you succeed in your educational journey.',
+    imageUrl: 'https://source.unsplash.com/300x200/?personalized-learning',
   },
+  
 ];
 
 const Service = () => {

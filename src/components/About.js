@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'
+import '../styles/About.css'
 
 const About = () => {
     return (
@@ -8,16 +8,14 @@ const About = () => {
                 <div className="About-text">
                     <h1 className="title">Get to Know About Us</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida sapien vel commodo pulvinar. Ut vel
-                        pharetra augue, nec vestibulum tellus. Aenean euismod, mauris non auctor congue, est leo feugiat lectus, vel
-                        commodo turpis massa et enim.</p>
+                        Welcome to E-Shiksha, where learning knows no bounds. We are passionate about education and dedicated to making it accessible to all. Our mission is to empower learners of all ages with the knowledge and skills they need to succeed in a rapidly changing world.
+                    </p>
                     <p>
-                        Fusce gravida tellus ut felis finibus vestibulum. Aliquam congue odio vel gravida maximus. Cras lobortis nulla
-                        at neque convallis hendrerit. Sed vulputate tristique massa id finibus. Aliquam erat volutpat. Nulla lobortis
-                        eleifend condimentum. 
-                    </p></div>
+                        At E-Shiksha, we curate the best educational content from across the web, providing a one-stop destination for students, professionals, and lifelong learners. Whether you're looking to explore new subjects, enhance your career, or simply satisfy your curiosity, we've got you covered.
+                    </p>
+                </div>
                 <div className="About-image">
-                    <img src="https://source.unsplash.com/400x300/?about-us"
+                    <img src="https://source.unsplash.com/500x300/?about-education"
                         alt="About Us" />
                 </div>
             </div>

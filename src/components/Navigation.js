@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Navigation.css';
+import '../styles/Navigation.css';
 import { GlobalContext } from '../GlobalProvider';
 
 const Navigation = () => {
