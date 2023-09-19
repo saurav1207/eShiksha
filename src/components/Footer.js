@@ -24,6 +24,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <p class="text-center">&copy; All Rights Reserved - Saurav Kumar</p>
     </footer>
   );
 };

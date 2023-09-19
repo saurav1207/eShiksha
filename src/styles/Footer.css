@@ -48,4 +48,14 @@
     line-height: 1;
 }
 
+.text-center {
+    text-align: center; 
+    margin-bottom: -47px;
+    background-color: rgb(209, 193, 193);
+    padding: 20px;
+    color: #666;
+    font-size: 20px;
+    line-height: 1;
+}
+
 
