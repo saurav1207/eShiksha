@@ -18,6 +18,7 @@ const Marquee = ({ announcements }) => {
 
     return (
         <div className="marquee-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+             {/* eslint-disable jsx-a11y/no-distracting-elements  */}
             <marquee
                 ref={marqueeRef}
                 direction="up"
@@ -30,9 +31,10 @@ const Marquee = ({ announcements }) => {
                     <p key={index}>
                         ➡️
                         <content style={{ color: '#012B55' }}>{announcement.title}&nbsp;</content>
-                        <a href={announcement.link} className="color-text" target="_blank" rel="noopener noreferrer">
+                        <a href={announcement.link} className="color-text" target="_blank" rel="noreferrer">
                             <strong>Read More&nbsp;</strong>
                         </a>
+
 
                     </p>
                 ))}
