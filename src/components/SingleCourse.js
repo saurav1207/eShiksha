@@ -83,7 +83,6 @@ const SingleCourse = () => {
               width="560"
               height="315"
               src={`https://www.youtube.com/embed/${activeContent.videoId}`}
-              frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
             ></iframe>

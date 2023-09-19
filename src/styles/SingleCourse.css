@@ -2,15 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 10px;
 }
 
 .sidebar {
   width: 250px;
   background-color: #f2f2f2;
   padding: 20px;
-  border-radius: 5px;
-  height: 80vh;
+  height: 85vh;
   position: sticky;
   top: 0;
 }
