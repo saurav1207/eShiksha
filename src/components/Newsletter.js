@@ -31,7 +31,6 @@ const Newsletter = () => {
         return regex.test(email);
     };
 
-
     return (
         <section className="newsletter">
             <div className="newsletter-content">
@@ -60,6 +59,6 @@ const Newsletter = () => {
             </div>
         </section>
     )
-}
+};
 
 export default Newsletter

@@ -19,14 +19,14 @@
 
 .footer-heading {
     color: #333;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .footer-text {
     color: #666;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -39,12 +39,11 @@
 .footer-list-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .footer-item-text {
     color: #666;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
 }
 
@@ -54,8 +53,6 @@
     background-color: rgb(209, 193, 193);
     padding: 20px;
     color: #666;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
 }
-
-

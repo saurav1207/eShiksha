@@ -54,10 +54,11 @@
 .newsletter-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: rgb(229, 225, 225);
+    background-color: transparent;
     cursor: pointer;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
+    border: 2px solid black;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -66,16 +67,18 @@
 
 .newsletter-button:hover {
     background-color: rgb(80, 80, 186);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .newsletter-title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .newsletter-description {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 

@@ -7,7 +7,7 @@
   .testimonials-title {
     margin-top: 0px;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 20px;
   }
   
@@ -54,15 +54,10 @@
     margin: 10px 0;
     text-align: center;
   }
-  
-  .testimonial-position {
-    font-size: 14px;
-    color: #777;
-  }
-  
+ 
   .testimonial-message {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #333;
+    color: #777;
   }
   

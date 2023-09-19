@@ -25,6 +25,7 @@ const testimonials = [
   },
 ];
 
+
 const Testimonials = () => {
   return (
     <section className="testimonials">

@@ -46,13 +46,16 @@
 }
 
 .Service-text h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   color: #333; 
 }
 
 .Service-text p {
   margin-bottom: 20px;
+  margin-right: 15px;
   color: #777; 
   text-align: justify;
+  font-size: 18px; 
+  line-height: 1.5;
 }

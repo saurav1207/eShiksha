@@ -38,6 +38,6 @@
 
 .cta-button:hover {
   background-color: rgb(80, 80, 186);
-  color: black;
+  cursor: pointer;
   text-decoration: none;
 }
