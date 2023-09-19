@@ -2,28 +2,28 @@ import React from 'react';
 import '../styles/Testimonial.css';
 
 const testimonials = [
-    {
-      id: 1,
-      name: 'Rahul Gupta',
-      message:
-        'eShiksha has been a tremendous resource for my studies. The variety of courses and study materials available here are exceptional. I can now prepare for exams more effectively.',
-      image: 'https://source.unsplash.com/150x150/?indian-student',
-    },
-    {
-      id: 2,
-      name: 'Priya Sharma',
-      message:
-        'As a student, I find eShiksha immensely helpful. The platform offers comprehensive content for various subjects. It is like having a virtual tutor.',
-      image: 'https://source.unsplash.com/150x150/?indian-girl',
-    },
-    {
-      id: 3,
-      name: 'Amit Patel',
-      message:
-        'Preparing for exams is challenging, but eShiksha has simplified it. The mock tests and study materials are of high quality. I am grateful for this platform.',
-      image: 'https://source.unsplash.com/150x150/?indian-boy',
-    },
-  ];
+  {
+    id: 1,
+    name: 'Rahul Gupta',
+    message:
+    'Preparing for exams is challenging, but eShiksha has simplified it. The study materials are of high quality. I am grateful for this platform.',
+    image: 'https://source.unsplash.com/150x150/?indian-student',
+  },
+  {
+    id: 2,
+    name: 'Priya Sharma',
+    message:
+    'Preparing for exams is challenging, but eShiksha has simplified it. The study materials are of high quality. I am grateful for this platform.',
+    image: 'https://source.unsplash.com/150x150/?indian-girl',
+  },
+  {
+    id: 3,
+    name: 'Amit Patel',
+    message:
+      'Preparing for exams is challenging, but eShiksha has simplified it. The study materials are of high quality. I am grateful for this platform.',
+    image: 'https://source.unsplash.com/150x150/?indian-boy',
+  },
+];
 
 const Testimonials = () => {
   return (
