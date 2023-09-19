@@ -1,210 +1,51 @@
 import React, { useState } from 'react';
 import '../styles/Opportunities.css';
+import opportunitiesData from './OpportunitiesData';
+import Marquee from './Marquee';
 
 const Opportunities = () => {
   const [activeSection, setActiveSection] = useState('Government-Exams');
   const [expandedItem, setExpandedItem] = useState(null);
 
-  const opportunitiesData = {
-    'Government-Exams': [
-      {
-        id: 1,
-        name: 'Exam Title 1',
-        organization: 'Government Organization 1',
-        deadline: 'January 31, 2024',
-        eligibility: 'Graduation, Age Limit: 21-30 years',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 2,
-        name: 'Exam Title 2',
-        organization: 'Government Organization 2',
-        deadline: 'February 15, 2024',
-        eligibility: 'Post Graduation, Age Limit: 22-32 years',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 3,
-        name: 'Exam Title 3',
-        organization: 'Government Organization 3',
-        deadline: 'January 31, 2024',
-        eligibility: 'Graduation, Age Limit: 21-30 years',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 4,
-        name: 'Exam Title 4',
-        organization: 'Government Organization 4',
-        deadline: 'February 15, 2024',
-        eligibility: 'Post Graduation, Age Limit: 22-32 years',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-    ],
-    'Private-Sector-Jobs': [
-      {
-        id: 5,
-        name: 'Job Title 1',
-        organization: 'Private Company 1',
-        deadline: 'March 15, 2024',
-        eligibility: 'Bachelor\'s degree, Experience: 2 years',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 6,
-        name: 'Job Title 2',
-        organization: 'Private Company 2',
-        deadline: 'April 5, 2024',
-        eligibility: 'Master\'s degree, Experience: 3 years',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 7,
-        name: 'Job Title 3',
-        organization: 'Private Company 3',
-        deadline: 'March 20, 2024',
-        eligibility: 'Bachelor\'s degree, Experience: 1 year',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 8,
-        name: 'Job Title 4',
-        organization: 'Private Company 4',
-        deadline: 'April 10, 2024',
-        eligibility: 'Master\'s degree, Experience: 2 years',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-    ],
-    'Entrance-Exams': [
-      {
-        id: 9,
-        name: 'Entrance Exam 1',
-        organization: 'University 1',
-        deadline: 'June 30, 2024',
-        eligibility: '12th Grade, Subjects: Physics, Chemistry, Mathematics',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 10,
-        name: 'Entrance Exam 2',
-        organization: 'University 2',
-        deadline: 'July 10, 2024',
-        eligibility: 'Bachelor\'s degree, Subjects: Biology, Chemistry',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 11,
-        name: 'Entrance Exam 3',
-        organization: 'University 3',
-        deadline: 'June 25, 2024',
-        eligibility: '12th Grade, Subjects: Physics, Chemistry, Mathematics',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 12,
-        name: 'Entrance Exam 4',
-        organization: 'University 4',
-        deadline: 'July 5, 2024',
-        eligibility: 'Bachelor\'s degree, Subjects: Biology, Chemistry',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-    ],
-    'Internships': [
-      {
-        id: 13,
-        name: 'Internship Title 1',
-        organization: 'Company A',
-        deadline: 'May 15, 2024',
-        eligibility: 'Undergraduate students, Duration: 3 months',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 14,
-        name: 'Internship Title 2',
-        organization: 'Company B',
-        deadline: 'June 5, 2024',
-        eligibility: 'Graduate students, Duration: 2 months',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 15,
-        name: 'Internship Title 3',
-        organization: 'Company C',
-        deadline: 'May 20, 2024',
-        eligibility: 'Undergraduate students, Duration: 3 months',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 16,
-        name: 'Internship Title 4',
-        organization: 'Company D',
-        deadline: 'June 10, 2024',
-        eligibility: 'Graduate students, Duration: 2 months',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-    ],
-    'Scholarships': [
-      {
-        id: 17,
-        name: 'Scholarship 1',
-        organization: 'Foundation A',
-        deadline: 'August 31, 2024',
-        eligibility: 'Undergraduate students, GPA: 3.5 or higher',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 18,
-        name: 'Scholarship 2',
-        organization: 'Foundation B',
-        deadline: 'September 10, 2024',
-        eligibility: 'Graduate students, GPA: 3.7 or higher',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 19,
-        name: 'Scholarship 3',
-        organization: 'Foundation C',
-        deadline: 'August 25, 2024',
-        eligibility: 'Undergraduate students, GPA: 3.5 or higher',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-      {
-        id: 20,
-        name: 'Scholarship 4',
-        organization: 'Foundation D',
-        deadline: 'September 5, 2024',
-        eligibility: 'Graduate students, GPA: 3.7 or higher',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        applyLink: '#',
-      },
-    ],
-    
+
+
+  const announcements = [
+    {
+      title: 'Examination Calendar for Academic Year 2024-25',
+      link: '#',
+    },
+    {
+      title: 'Extension of Date of Registration for Fall Semester 2024',
+      link: '#',
+    },
+    {
+      title: 'Scholarship Opportunities for Undergraduate Students',
+      link: '#',
+    },
+    {
+      title: 'Important Changes in Admission Process for 2024',
+      link: '#',
+    },
+    {
+      title: 'Call for Research Papers: International Conference 2024',
+      link: '#',
+    },
+  ];
+
+  // Function to add a new announcement at the beginning of the array
+  const addNewAnnouncement = (title, link) => {
+    announcements.unshift({ title, link });
   };
+
+  // Example of adding a new announcement
+  addNewAnnouncement('New Announcement Title', '#');
 
   // Toggle expansion of an item
   const toggleExpand = (itemId) => {
     if (expandedItem === itemId) {
-      setExpandedItem(null); 
+      setExpandedItem(null);
     } else {
-      setExpandedItem(itemId); 
+      setExpandedItem(itemId);
     }
   };
 
@@ -217,10 +58,11 @@ const Opportunities = () => {
               href="#Government-Exams"
               onClick={() => {
                 setActiveSection('Government-Exams');
-                setExpandedItem(null); 
+                setExpandedItem(null);
               }}
-            >
+            > <hr />
               Government Exams
+              <hr />
             </a>
           </li>
           <li>
@@ -228,10 +70,11 @@ const Opportunities = () => {
               href="#Private-Sector-Jobs"
               onClick={() => {
                 setActiveSection('Private-Sector-Jobs');
-                setExpandedItem(null); 
+                setExpandedItem(null);
               }}
             >
               Private Sector Jobs
+              <hr />
             </a>
           </li>
           <li>
@@ -239,10 +82,11 @@ const Opportunities = () => {
               href="#Entrance-Exams"
               onClick={() => {
                 setActiveSection('Entrance-Exams');
-                setExpandedItem(null); 
+                setExpandedItem(null);
               }}
             >
               Entrance Exams
+              <hr />
             </a>
           </li>
           <li>
@@ -250,10 +94,11 @@ const Opportunities = () => {
               href="#Internships"
               onClick={() => {
                 setActiveSection('Internships');
-                setExpandedItem(null); 
+                setExpandedItem(null);
               }}
             >
               Internships
+              <hr />
             </a>
           </li>
           <li>
@@ -261,10 +106,11 @@ const Opportunities = () => {
               href="#Scholarships"
               onClick={() => {
                 setActiveSection('Scholarships');
-                setExpandedItem(null); 
+                setExpandedItem(null);
               }}
             >
               Scholarships
+              <hr />
             </a>
           </li>
         </ul>
@@ -277,7 +123,8 @@ const Opportunities = () => {
             <div className="opportunity-content">
               {opportunitiesData[activeSection].map((opportunity) => (
                 <div
-                  className={`opportunity-item ${expandedItem === opportunity.id ? 'expanded' : ''}`}
+                  className={`opportunity-item ${expandedItem === opportunity.id ? 'expanded' : ''
+                    }`}
                   key={opportunity.id}
                 >
                   <h3 onClick={() => toggleExpand(opportunity.id)}>{opportunity.name}</h3>
@@ -297,6 +144,7 @@ const Opportunities = () => {
             </div>
           </>
         )}
+        <Marquee announcements={announcements} />
       </div>
     </section>
   );

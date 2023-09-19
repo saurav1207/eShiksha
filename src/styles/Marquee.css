@@ -1,0 +1,14 @@
+.marquee-container {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.marquee p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.color-text {
+    color: rgb(80, 80, 186);
+}
