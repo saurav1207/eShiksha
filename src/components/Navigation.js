@@ -42,7 +42,7 @@ const Navigation = () => {
       <div className="auth-buttons">
         {isLoggedIn ? (
           <>
-            <div className="user-info">Welcome, {JSON.parse(localStorage.getItem('user')).firstName}</div>
+            <div className="user-info">Welcome, {JSON.parse(localStorage.getItem('user')).name}</div>
             <button className="signup-button" onClick={handleLogout}>
               Logout
             </button>

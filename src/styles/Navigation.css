@@ -56,20 +56,23 @@
   border: 1px solid black;
   color: black;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .auth-buttons button a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
+  color: inherit;
+
 }
 
 .auth-buttons button.login-button,
 .auth-buttons button.logout-button {
   background-color: rgb(80, 80, 186);
   width: 100px;
+  color:#fff;
 }
 
 .auth-buttons button.signup-button {
@@ -78,10 +81,14 @@
 
 .auth-buttons button.signup-button:hover {
   background-color: rgb(80, 80, 186);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .auth-buttons button.signup-button:hover+button.login-button {
   background-color: transparent;
+  color: black; 
 }
 
 .auth-buttons button:first-child {
@@ -90,4 +97,7 @@
 
 .auth-buttons button:hover {
   background-color: rgb(80, 80, 186);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Course.css';
-import WebDevImage from '../assets/undraw_web_developer_re_h7ie.svg';
+import WebDevImage from '../assets/undraw_web_development_0l6v.svg';
 import MLImage from '../assets/undraw_source_code_re_wd9m.svg';
-import CloudImage from '../assets/undraw_cloud_hosting_7xb1.svg';
+import CloudImage from '../assets/undraw_upload_re_pasx.svg';
 
 const Course = () => {
   const initialQuery = ''; 
@@ -44,6 +44,7 @@ const Course = () => {
       <div className="search-bar">
         <input
           type="text"
+          className='srch'
           placeholder="Search for courses"
           value={query}
           onChange={handleSearchChange}

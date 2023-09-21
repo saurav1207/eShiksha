@@ -1,20 +1,42 @@
-import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
+import loginpic from '../assets/loginn.svg';
 
 const Login = () => {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  // Function to clear the error message after a timeout
+  const clearError = () => {
+    setError('');
+  };
+
+  useEffect(() => {
+    let errorTimeout;
+
+    if (error) {
+      errorTimeout = setTimeout(clearError, 2000);
+    }
+
+    return () => {
+      if (errorTimeout) {
+        clearTimeout(errorTimeout);
+      }
+    };
+  }, [error]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setError('');
+
     if (email.trim() !== '' && password.trim() !== '') {
       if (!/\S+@\S+\.\S+/.test(email)) {
-        toast.error('Invalid email');
+        setError('Invalid email');
       } else {
         setIsSubmitting(true);
 
@@ -25,47 +47,57 @@ const Login = () => {
         if (userData && email === userData.email && password === userData.password) {
           setIsSubmitting(false);
 
-          // Show success toast message
-          toast.success('Login successful!');
+          // Show success message
+          setSuccess('Login successful!');
 
           // Store the authentication status in localStorage
           localStorage.setItem('isLoggedIn', true);
 
           // Navigate to the home page
           navigate('/');
+
         } else {
           setIsSubmitting(false);
 
-          // Show error toast
-          toast.error('Login failed. Please try again.');
+          setError('Login failed. Please try again.');
+          
         }
       }
     } else {
-      toast.error('Please enter email and password');
+      setError('Please enter email and password');
     }
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="input-group">
-          <label>Email:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+    <section className='login-section'>
+      <div className="login-content">
+        <div className="login-img">
+          <img src={loginpic} alt="Login illustration" />
         </div>
-        <div className="input-group">
-          <label>Password:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <div className="login-container">
+          <h2>Login</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="input-group">
+              <label>Email:</label>
+              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+            <div className="input-group">
+              <label>Password:</label>
+              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+            {error && <div className="error-message">{error}</div>}
+            {success && <div className="success-message">{success}</div>}
+            <button type="submit" disabled={isSubmitting} className="login-button">
+              Login
+            </button>
+
+          </form>
+          <p>
+            Not logged in? <Link to="/signin">Sign up here</Link>
+          </p>
         </div>
-        <button type="submit" disabled={isSubmitting}>
-          Login
-        </button>
-      </form>
-      <p>
-        Not logged in? <Link to="/signin">Sign up here</Link>
-      </p>
-      <ToastContainer />
-    </div>
+      </div>
+    </section>
   );
 };
 
