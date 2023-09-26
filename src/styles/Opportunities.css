@@ -11,6 +11,13 @@
   transition: transform 0.2s ease-in-out;
 }
 
+.opportunity-heading {
+  text-align: center;
+  font-size: 2rem; 
+  margin-top: 0px;
+  margin-bottom: 20px; 
+}
+
 /* Styling for the sidebar menu */
 .sidebar-menu {
   width: 20%;

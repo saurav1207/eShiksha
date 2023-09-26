@@ -50,6 +50,8 @@ const Opportunities = () => {
   };
 
   return (
+    <>
+    <h1 className="opportunity-heading">Opportunity for Students</h1>
     <section className="opportunities-container">
       <div className="sidebar-menu">
         <ul>
@@ -147,6 +149,7 @@ const Opportunities = () => {
         <Marquee announcements={announcements} />
       </div>
     </section>
+    </>
   );
 };
 
