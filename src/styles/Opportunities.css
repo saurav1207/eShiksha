@@ -1,21 +1,20 @@
-/* Styling for the opportunities container */
+.op-sec {
+  background-color: #f4f4f4;
+  margin-top: -40px;
+  min-height: 100vh;
+}
+
+.op-heading {
+  padding: 1px;
+  font-size: 28px;
+  text-align: center;
+}
+
 .opportunities-container {
   display: flex;
   justify-content: space-between;
-  margin: 100px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease-in-out;
-}
-
-.opportunity-heading {
-  text-align: center;
-  font-size: 2rem; 
-  margin-top: 0px;
-  margin-bottom: 20px; 
+  margin-left: 110px;
+  margin-right: 100px;
 }
 
 /* Styling for the sidebar menu */
@@ -45,12 +44,12 @@
 }
 
 .sidebar-menu a:hover {
-  color: #ff5733;
+  color: rgb(80, 80, 186);
   text-decoration: none;
 }
 
 .sidebar-menu a.active {
-  background-color: #ff5733;
+  background-color: rgb(80, 80, 186);
 }
 
 /* Styling for the opportunities details */
@@ -100,7 +99,6 @@
 /* Styling for links within the opportunity item */
 .opportunity-item a {
   text-decoration: none;
-
   color: rgb(80, 80, 186);
   font-weight: bold;
 }
@@ -108,4 +106,3 @@
 .opportunity-item a:hover {
   text-decoration: underline;
 }
-

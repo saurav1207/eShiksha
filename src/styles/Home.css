@@ -1,26 +1,49 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Hero section styles */
 .hero {
-    background-image: url('../assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background-color: #f4f4f4;
+    color: black;
     text-align: center;
-    padding: 190px 0;
 }
 
+.hero-heading {
+    font-family: General Sans,ui-sans-serif,system-ui;
+    font-size: 6rem;
+    font-weight: 900;
+    margin: -40px 90px 5px 100px;
+}
+/* 
 .hero-title {
-    font-size: 36px;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.hero-description {
     font-size: 18px;
-    margin-bottom: 40px;
+    font-weight: 500;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
+.feature-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .feature-button {
+    padding: 15px 35px;
+    margin: 0 15px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .feature-button:hover {
+    background-color: rgb(80, 80, 186);
+    color: #fff;
+    cursor: pointer;
+  }
+   */

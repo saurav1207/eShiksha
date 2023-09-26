@@ -51,104 +51,108 @@ const Opportunities = () => {
 
   return (
     <>
-    <h1 className="opportunity-heading">Opportunity for Students</h1>
-    <section className="opportunities-container">
-      <div className="sidebar-menu">
-        <ul>
-          <li>
-            <a
-              href="#Government-Exams"
-              onClick={() => {
-                setActiveSection('Government-Exams');
-                setExpandedItem(null);
-              }}
-            > <hr />
-              Government Exams
-              <hr />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#Private-Sector-Jobs"
-              onClick={() => {
-                setActiveSection('Private-Sector-Jobs');
-                setExpandedItem(null);
-              }}
-            >
-              Private Sector Jobs
-              <hr />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#Entrance-Exams"
-              onClick={() => {
-                setActiveSection('Entrance-Exams');
-                setExpandedItem(null);
-              }}
-            >
-              Entrance Exams
-              <hr />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#Internships"
-              onClick={() => {
-                setActiveSection('Internships');
-                setExpandedItem(null);
-              }}
-            >
-              Internships
-              <hr />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#Scholarships"
-              onClick={() => {
-                setActiveSection('Scholarships');
-                setExpandedItem(null);
-              }}
-            >
-              Scholarships
-              <hr />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="opportunities-details">
-        {activeSection && (
-          <>
-            <h2>{activeSection}</h2>
-            <div className="opportunity-content">
-              {opportunitiesData[activeSection].map((opportunity) => (
-                <div
-                  className={`opportunity-item ${expandedItem === opportunity.id ? 'expanded' : ''
-                    }`}
-                  key={opportunity.id}
+      <section className='op-sec'>
+        <div className="op-heading">
+          <h1>Opportunities For Students</h1>
+        </div>
+        <div className="opportunities-container">
+          <div className="sidebar-menu">
+            <ul>
+              <li>
+                <a
+                  href="#Government-Exams"
+                  onClick={() => {
+                    setActiveSection('Government-Exams');
+                    setExpandedItem(null);
+                  }}
+                > <hr />
+                  Government Exams
+                  <hr />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Private-Sector-Jobs"
+                  onClick={() => {
+                    setActiveSection('Private-Sector-Jobs');
+                    setExpandedItem(null);
+                  }}
                 >
-                  <h3 onClick={() => toggleExpand(opportunity.id)}>{opportunity.name}</h3>
-                  {expandedItem === opportunity.id && (
-                    <>
-                      <p>Organization: {opportunity.organization}</p>
-                      <p>Application Deadline: {opportunity.deadline}</p>
-                      <p>Eligibility Criteria: {opportunity.eligibility}</p>
-                      <p>Description: {opportunity.description}</p>
-                      <p>
-                        How to Apply: <a href={opportunity.applyLink}>Apply Here</a>
-                      </p>
-                    </>
-                  )}
+                  Private Sector Jobs
+                  <hr />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Entrance-Exams"
+                  onClick={() => {
+                    setActiveSection('Entrance-Exams');
+                    setExpandedItem(null);
+                  }}
+                >
+                  Entrance Exams
+                  <hr />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Internships"
+                  onClick={() => {
+                    setActiveSection('Internships');
+                    setExpandedItem(null);
+                  }}
+                >
+                  Internships
+                  <hr />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Scholarships"
+                  onClick={() => {
+                    setActiveSection('Scholarships');
+                    setExpandedItem(null);
+                  }}
+                >
+                  Scholarships
+                  <hr />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="opportunities-details">
+            {activeSection && (
+              <>
+                <h2>{activeSection}</h2>
+                <div className="opportunity-content">
+                  {opportunitiesData[activeSection].map((opportunity) => (
+                    <div
+                      className={`opportunity-item ${expandedItem === opportunity.id ? 'expanded' : ''
+                        }`}
+                      key={opportunity.id}
+                    >
+                      <h3 onClick={() => toggleExpand(opportunity.id)}>{opportunity.name}</h3>
+                      {expandedItem === opportunity.id && (
+                        <>
+                          <p>Organization: {opportunity.organization}</p>
+                          <p>Application Deadline: {opportunity.deadline}</p>
+                          <p>Eligibility Criteria: {opportunity.eligibility}</p>
+                          <p>Description: {opportunity.description}</p>
+                          <p>
+                            How to Apply: <a href={opportunity.applyLink}>Apply Here</a>
+                          </p>
+                        </>
+                      )}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </>
-        )}
-        <Marquee announcements={announcements} />
-      </div>
-    </section>
+              </>
+            )}
+            <Marquee announcements={announcements} />
+          </div>
+        </div>
+      </section>
     </>
   );
 };
