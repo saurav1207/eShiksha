@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../styles/Navigation.css';
-import { GlobalContext } from '../GlobalProvider';
+import './Navigation.css';
+import { GlobalContext } from '../../GlobalProvider';
 
 const Navigation = () => {
   const navigate = useNavigate();

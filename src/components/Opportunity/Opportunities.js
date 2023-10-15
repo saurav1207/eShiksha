@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Opportunities.css';
+import './Opportunities.css';
 import opportunitiesData from './OpportunitiesData';
 import Marquee from './Marquee';
 
@@ -11,19 +11,19 @@ const Opportunities = () => {
 
   const announcements = [
     {
-      title: 'Examination Calendar for Academic Year 2024-25',
+      title: 'Academic Year 2024-25 Examination Calendar Released',
       link: '#',
     },
     {
-      title: 'Extension of Date of Registration for Fall Semester 2024',
+      title: 'Extended Registration Deadline for Fall Semester 2024',
       link: '#',
     },
     {
-      title: 'Scholarship Opportunities for Undergraduate Students',
+      title: 'Government Scholarships for Undergraduate Students Available',
       link: '#',
     },
     {
-      title: 'Important Changes in Admission Process for 2024',
+      title: 'Important Changes in Admission Process for 2024 Announced',
       link: '#',
     },
     {
@@ -31,6 +31,7 @@ const Opportunities = () => {
       link: '#',
     },
   ];
+  
 
   // Function to add a new announcement at the beginning of the array
   const addNewAnnouncement = (title, link) => {
@@ -40,7 +41,6 @@ const Opportunities = () => {
   // Example of adding a new announcement
   addNewAnnouncement('New Announcement Title', '#');
 
-  // Toggle expansion of an item
   const toggleExpand = (itemId) => {
     if (expandedItem === itemId) {
       setExpandedItem(null);

@@ -1,9 +1,10 @@
 import React from 'react';
-import '../styles/Home.css';
-import CallToAction from './CallToAction';
-import Opportunities from './Opportunities';
-import Newsletter from './Newsletter';
-import Testimonials from './Testimonial';
+import './Home.css';
+import CallToAction from '../CallToAction/CallToAction';
+import Opportunities from '../Opportunity/Opportunities';
+import WorkFlow from '../Workflow/Workflow';
+import Newsletter from '../Newsletter/Newsletter';
+import Testimonials from '../Testimonial/Testimonials';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         </div>
       </section>
       <CallToAction />
+      <WorkFlow />
       <Opportunities />
       <Testimonials />
       <Newsletter />

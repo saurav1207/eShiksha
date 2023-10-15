@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/CallToAction.css';
-import explore from '../assets/undraw_explore_re_8l4v.svg';
+import '../CallToAction/CallToAction.css';
+import explore from './img/undraw_explore_re_8l4v.svg';
 
 const CallToAction = () => {
   return (

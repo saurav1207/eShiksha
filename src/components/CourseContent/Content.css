@@ -11,6 +11,16 @@
   height: 85vh;
   position: sticky;
   top: 0;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 3px; 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #999; 
+  border-radius: 2px; 
 }
 
 .content-list {
@@ -25,10 +35,12 @@
   font-weight: bold;
   color: #333;
   transition: background-color 0.3s ease;
+  margin-bottom: 5px; 
 }
 
 .content-list li:hover {
   background-color: #dcdcdc;
+  
 }
 
 .content-list ul {
@@ -71,7 +83,6 @@
   height: 50%;
   padding-bottom: 40%;
   overflow: hidden;
-  background-color: #000;
   border-radius: 5px;
   margin: 0 auto;
 }

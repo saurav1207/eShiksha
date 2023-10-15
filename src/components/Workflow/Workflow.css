@@ -1,0 +1,77 @@
+.workflow {
+  background-color: #f0f0f0;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.slogan {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  min-width: 200px;
+}
+
+.iconBox {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:rgb(80, 80, 186);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.subTitle {
+  font-size: 1rem;
+  color: #777;
+  opacity: 0.75;
+  margin-top: 1rem;
+}

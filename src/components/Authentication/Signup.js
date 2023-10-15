@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import signpic from '../assets/create_acc.svg';
-import '../styles/Signup.css';
+import signpic from './img/create_acc.svg';
+import '../Authentication/Signup.css';
 
 const Signup = () => {
   const navigate = useNavigate();

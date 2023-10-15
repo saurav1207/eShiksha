@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Course.css';
-import WebDevImage from '../assets/undraw_web_development_0l6v.svg';
-import MLImage from '../assets/undraw_source_code_re_wd9m.svg';
-import CloudImage from '../assets/undraw_upload_re_pasx.svg';
+import '../Course/Course.css';
+import WebDevImage from './img/undraw_web_development_0l6v.svg';
+import MLImage from './img/undraw_source_code_re_wd9m.svg';
+import CloudImage from './img/undraw_upload_re_pasx.svg';
 
 const Course = () => {
   const initialQuery = ''; 

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import '../styles/Marquee.css';
+import './Marquee.css';
 
 const Marquee = ({ announcements }) => {
     const marqueeRef = useRef(null);

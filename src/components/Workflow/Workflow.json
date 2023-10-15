@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Signup on eShiksha",
+    "text": "Create your account using your email and password to access our educational platform."
+  },
+  {
+    "id": 2,
+    "title": "Set Up Your Profile",
+    "text": "Complete your profile with your personal information and educational interests."
+  },
+  {
+    "id": 3,
+    "title": "Explore Courses",
+    "text": "Discover a wide range of courses from various subjects and disciplines."
+  },
+  {
+    "id": 4,
+    "title": "Learn & Engage",
+    "text": "Start learning, interact with instructors, and engage with fellow learners."
+  }
+]

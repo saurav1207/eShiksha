@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../styles/Login.css';
-import loginpic from '../assets/loginn.svg';
+import '../Authentication/Login.css';
+import loginpic from './img/loginn.svg';
 
 const Login = () => {
   const navigate = useNavigate();

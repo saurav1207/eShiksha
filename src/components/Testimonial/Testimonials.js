@@ -1,19 +1,19 @@
 import React from 'react';
-import '../styles/Testimonial.css';
+import './Testimonial.css';
 
 const testimonials = [
   {
     id: 1,
     name: 'Rahul Gupta',
     message:
-    'Preparing for exams is challenging, but eShiksha has simplified it. The study materials are of high quality. I am grateful for this platform.',
+      'Preparing for exams is challenging, but eShiksha has simplified it. The study materials are of high quality. I am grateful for this platform.',
     image: 'https://source.unsplash.com/150x150/?indian-student',
   },
   {
     id: 2,
     name: 'Priya Sharma',
     message:
-    'Preparing for exams is challenging, but eShiksha has simplified it. The study materials are of high quality. I am grateful for this platform.',
+      'Preparing for exams is challenging, but eShiksha has simplified it. The study materials are of high quality. I am grateful for this platform.',
     image: 'https://source.unsplash.com/150x150/?indian-girl',
   },
   {
@@ -24,8 +24,6 @@ const testimonials = [
     image: 'https://source.unsplash.com/150x150/?indian-boy',
   },
 ];
-
-
 const Testimonials = () => {
   return (
     <section className="testimonials">

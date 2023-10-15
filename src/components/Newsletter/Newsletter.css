@@ -1,5 +1,6 @@
 .newsletter {
-    background-color: #929eab;
+    /* background-color: #929eab; */
+    background-color: rgb(229, 225, 225);
     color: #333;
     text-align: center;
     padding: 60px 100px;

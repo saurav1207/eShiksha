@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Newsletter.css';
+import './Newsletter.css';
 
 const Newsletter = () => {
     const [email, setEmail] = useState('');
@@ -55,7 +55,6 @@ const Newsletter = () => {
                 <div className={`message ${messageType === 'success' ? 'success' : 'error'}`}>
                     {message}
                 </div>
-
             </div>
         </section>
     )
